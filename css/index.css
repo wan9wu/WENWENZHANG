@@ -69,6 +69,8 @@ p {font-size:0.875em;}
     float: left;
 
     list-style-type: decimal;
+
+    cursor:pointer;
 }
 #contact_button {
     font-family: 'good_sansregular';
@@ -77,6 +79,8 @@ p {font-size:0.875em;}
     float: right;
 
     margin-right: 40px;
+
+    cursor:pointer;
 }
 
 .detail_box {
@@ -142,6 +146,7 @@ p {font-size:0.875em;}
 }
 
 .ci_header{
+    cursor:pointer;
     font-family: 'good_sansregular';
     position: relative;
     width: 100%;
@@ -180,7 +185,7 @@ p {font-size:0.875em;}
 
 .details_content{
     font-family: 'gt_sectrabook';
-    display: none; 
+    /* display: none;  */
     position: relative;
     width: 100%;
 }
