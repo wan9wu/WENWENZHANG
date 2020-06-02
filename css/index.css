@@ -34,8 +34,15 @@ h1 {
 h2 {
     font-size:1.3em;
     font-weight: 100;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
-p {font-size:0.875em;}
+
+p {
+    font-size:0.875em;
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
+}
 
 .no-bar::-webkit-scrollbar {
     display:none;
@@ -44,6 +51,7 @@ p {font-size:0.875em;}
 
 #header {
     height: 3.6em;
+    top: -0.5em;
 
     position:relative;
     width: 100%;
@@ -60,15 +68,18 @@ p {font-size:0.875em;}
     height: 100%;
     position:relative;
     float:left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #info_button {
     font-family: 'good_sansregular';
     height:100%;
     position:relative;
     float: left;
+    right: 20px;
 
     list-style-type: decimal;
+
+    cursor:pointer;
 }
 #contact_button {
     font-family: 'good_sansregular';
@@ -76,7 +87,9 @@ p {font-size:0.875em;}
     height: 100%;
     float: right;
 
-    margin-right: 40px;
+    margin-right: 10px;
+
+    cursor:pointer;
 }
 
 .detail_box {
@@ -113,10 +126,12 @@ p {font-size:0.875em;}
 #main{
     position: relative;
     width: 100%;
+    height: 92%;
+    top: -0.5em;
 }
 #catalogue{
     position: relative;
-    width: 44%;
+    width: 43%;
     height: 100%;
     float:left;
     overflow: scroll;
@@ -142,10 +157,13 @@ p {font-size:0.875em;}
 }
 
 .ci_header{
+    cursor:pointer;
     font-family: 'good_sansregular';
     position: relative;
     width: 100%;
     overflow: hidden;
+
+    font-size: 0.8em;
 }
 .ci_tittle{
     position: relative;
@@ -180,7 +198,7 @@ p {font-size:0.875em;}
 
 .details_content{
     font-family: 'gt_sectrabook';
-    display: none; 
+    /* display: none;  */
     position: relative;
     width: 100%;
 }
@@ -189,4 +207,10 @@ p {font-size:0.875em;}
 }
 .details_content video{
     width: 100%;
+}
+
+.details_content span{
+    float: right;
+    margin-right: 5px;
+
 }
