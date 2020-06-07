@@ -1,5 +1,7 @@
 $(document).ready(function(){
     console.log("document is ready.");
+    lazyload();
+    let lazy = lazyload();
 
     $("div.ci_body").first().show(1000);
 
@@ -29,5 +31,18 @@ $(document).ready(function(){
         
     });
 
+    $("#p_title").click(function(){
+        $("div.ci_body").each(function(){$(this).hide(500);});
+        $("div.ci_body").first().show(1000);
+
+        $("#details").animate({ scrollTop: -30}, 1000); // 动态跳转到指定位置（数值越大滚动速度越慢）
+        
+        $("#catalogue").animate({ scrollTop:-30}, 1000);
+    });
+
+    setTimeout(function (){
+        lazy.loadAndDestroy();
+    }, 3000);
+    
 
 });
