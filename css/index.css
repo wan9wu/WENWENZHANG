@@ -43,7 +43,7 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    font-size:1.1em;
+    font-size:1.3em;
     font-weight: 100;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
@@ -51,7 +51,7 @@ h2 {
 }
 
 p {
-    font-size:0.7em;
+    font-size:0.875em;
     margin-block-start: 0.2em;
     margin-block-end: 1em;
     letter-spacing:0.2pt;
