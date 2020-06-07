@@ -9,28 +9,26 @@
         <link rel="Icon" href="img/Icon.png">
         <link rel="stylesheet" href="css/index.css" type="text/css" />
         <script src="js/jquery-3.5.0.min.js"></script>
+        <script src="js/lazyload.min.js"></script>
         <script src="js/index.js"></script>
+        
     </head>
     <body>
         <div id="header">
             <div id="p_title"><h1>WENWEN ZHANG</h1></div>
             <div id="info_button" class = "header_button" data-detail-id = "info_button_detail"><span class="circle"></span><a><h1>INFO</h1></a></div>
-            <div id="contact_button" class = "header_button" data-detail-id = "contact_button_detail"><span class="circle"></span><h1>CONTACT</h1></div>
+            <div id="contact_button" class = "header_button" data-detail-id = "contact_button_detail"><span class="circle"></span><a href="Mailto://zhangwenwen0930@gmail.com"><h1 href="Mailto://zhangwenwen0930@gmail.com">CONTACT</h1></a></div>
             <div id="info_button_detail" class = "detail_box">
-                Wenwen Zhang is a multidisciplinary graphic designer based in New Haven. Formerly she was intern at 2x4 Beijing in 2018. Her design practices focus on the contextual and conversational way of making for a variety of groups operating in art, architecture, culture, and retail.<br>
-                Wenwen received her BS from Rutgers University in Management in 2017, and her MFA from Yale University in Graphic Design in 2020.
+                <div id = "info_button_detail_inner">
+                    <p>Wenwen Zhang is a multidisciplinary graphic designer based in New Haven. Formerly she was intern at 2x4 Beijing in 2018. Her design practices focus on the contextual and conversational way of making for a variety of groups operating in art, architecture, culture, and retail.</p>
+                    <p>Wenwen received her BS from Rutgers University in Management in 2017, and her MFA from Yale University in Graphic Design in 2020.</p>
+                </div>
+                
                             
             </div>
-            <div id="contact_button_detail" class = "detail_box">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat.
-                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
-                nulla facilisi.
-                illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-            </div>
+            <!-- <div id="contact_button_detail" class = "detail_box">
+                zhangwenwen0930@gmail.com
+            </div> -->
         </div>
         <div id="main">
             <div id="catalogue" class="no-bar">
@@ -476,126 +474,126 @@
             </div>
             <div id="details" class="no-bar">
                 <div id = "dt_01" title="1_Reflex_Arc" class="details_content">
-                    <img src="./img/1_Reflex_Arc/reflex_arc_1.gif">
+                   <img src="./img/1_Reflex_Arc/reflex_arc_1.gif">
                     <span>reflex arc 1 </span>
-                    <img src="./img/1_Reflex_Arc/reflex_arc_2.jpg">
+                   <img class="lazyload"  data-src="./img/1_Reflex_Arc/reflex_arc_2.jpg">
                     <span>reflex arc 2 </span>
-                    <img src="./img/1_Reflex_Arc/reflex_arc_3.jpg">
+                   <img class="lazyload" data-src="./img/1_Reflex_Arc/reflex_arc_3.jpg">
                     <span>reflex arc 3 </span>
-                    <img src="./img/1_Reflex_Arc/reflex_arc_4.jpg">
+                   <img class="lazyload" data-src="./img/1_Reflex_Arc/reflex_arc_4.jpg">
                     <span>reflex arc 4 </span>
-                    <img src="./img/1_Reflex_Arc/reflex_arc_5.jpg">
+                   <img class="lazyload" data-src="./img/1_Reflex_Arc/reflex_arc_5.jpg">
                     <span>reflex arc 5 </span>
-                    <img src="./img/1_Reflex_Arc/reflex_arc_6.jpg">
+                   <img class="lazyload" data-src="./img/1_Reflex_Arc/reflex_arc_6.jpg">
                     <span>reflex arc 6 </span>
                     
                 </div>
 
                 <div id = "dt_02" title="2_Thesis_Book" class="details_content">
-                    <img src="./img/2_Thesis_Book/thesis_1.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_1.jpg">
                     <span>Thesis Book 1</span>
-                    <img src="./img/2_Thesis_Book/thesis_2.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_2.jpg">
                     <span>Thesis Book 2</span>
-                    <img src="./img/2_Thesis_Book/thesis_3.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_3.jpg">
                     <span>Thesis Book 3</span>
-                    <img src="./img/2_Thesis_Book/thesis_4.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_4.jpg">
                     <span>Thesis Book 4</span>
-                    <img src="./img/2_Thesis_Book/thesis_5.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_5.jpg">
                     <span>Thesis Book 5</span>
-                    <img src="./img/2_Thesis_Book/thesis_6.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_6.jpg">
                     <span>Thesis Book 6</span>
-                    <img src="./img/2_Thesis_Book/thesis_7.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_7.jpg">
                     <span>Thesis Book 7</span>
-                    <img src="./img/2_Thesis_Book/thesis_8.jpg">
+                   <img class="lazyload" data-src="./img/2_Thesis_Book/thesis_8.jpg">
                     <span>Thesis Book 8</span>
                 </div>
 
                 <div id = "dt_03" title="3_Antwerp_Type_Poster" class="details_content">
-                    <img src="./img/3_Antwerp_Type_Poster/antwerp_poster.jpg">
+                   <img class="lazyload" data-src="./img/3_Antwerp_Type_Poster/antwerp_poster.jpg">
                     <span>Antwerp Type Poster</span>
                 </div>
 
                 <div id = "dt_04" title="4_SJTU_Troposphere_Symposium" class="details_content">
-                    <img src="./img/4_SJTU_Troposphere_Symposium/SJTU_Troposphere_Symposium.jpg">
+                   <img class="lazyload" data-src="./img/4_SJTU_Troposphere_Symposium/SJTU_Troposphere_Symposium.jpg">
                     <span>SJTU Troposphere Symposium</span>
                 </div>
 
                 <div id = "dt_05" title="5_Film_Series_Poster" class="details_content">
-                    <img src="./img/5_Film_Series_Poster/film_series_poster_1.jpg">
+                   <img class="lazyload" data-src="./img/5_Film_Series_Poster/film_series_poster_1.jpg">
                     <span>Film Series Poster 1</span>
-                    <img src="./img/5_Film_Series_Poster/film_series_poster_2.jpg">
+                   <img class="lazyload" data-src="./img/5_Film_Series_Poster/film_series_poster_2.jpg">
                     <span>Film Series Poster 2</span>
                 </div>
 
                 <div id = "dt_06" title="6_Paprika" class="details_content">
-                    <img src="./img/6_Paprika/paprika_1.jpg">
+                   <img class="lazyload" data-src="./img/6_Paprika/paprika_1.jpg">
                     <span>Paprika 1</span>
-                    <img src="./img/6_Paprika/paprika_2.jpg">
+                   <img class="lazyload" data-src="./img/6_Paprika/paprika_2.jpg">
                     <span>Paprika 2</span>
-                    <img src="./img/6_Paprika/paprika_3.jpg">
+                   <img class="lazyload" data-src="./img/6_Paprika/paprika_3.jpg">
                     <span>Paprika 3</span>
-                    <img src="./img/6_Paprika/paprika_4.jpg">
+                   <img class="lazyload" data-src="./img/6_Paprika/paprika_4.jpg">
                     <span>Paprika 4</span>
 
                 </div>
 
                 <div id = "dt_07" title="7_The_Mountain" class="details_content">
-                    <img src="./img/7_The_Mountain/the_mountain_1.jpg">
+                   <img class="lazyload" data-src="./img/7_The_Mountain/the_mountain_1.jpg">
                     <span>the mountain 1</span>
-                    <img src="./img/7_The_Mountain/the_mountain_2.jpg">
+                   <img class="lazyload" data-src="./img/7_The_Mountain/the_mountain_2.jpg">
                     <span>the mountain 2</span>
                 </div>
 
                 <div id = "dt_08" title="8_Julika_Rudelius" class="details_content">
-                    <img src="./img/8_Julika_Rudelius/Julika_Rudelius_poster.jpg">
+                   <img class="lazyload" data-src="./img/8_Julika_Rudelius/Julika_Rudelius_poster.jpg">
                     <span>Julika Rudelius poster</span>
                 </div>
 
                 <div id = "dt_09" title="9_Irma_Boom" class="details_content">
-                    <img src="./img/9_Irma_Boom/irma_boom_poster.jpg">
+                   <img class="lazyload" data-src="./img/9_Irma_Boom/irma_boom_poster.jpg">
                     <span>irma boom poster</span>
                 </div>
 
                 <div id = "dt_10" title="10_You_Cannot_Record_a_Sigh" class="details_content">
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_1.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_1.jpg">
                     <span>You Cannot Record a Sigh 1</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_2.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_2.jpg">
                     <span>You Cannot Record a Sigh 2</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_3.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_3.jpg">
                     <span>You Cannot Record a Sigh 3</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_4.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_4.jpg">
                     <span>You Cannot Record a Sigh 4</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_5.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_5.jpg">
                     <span>You Cannot Record a Sigh 5</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_6.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_6.jpg">
                     <span>You Cannot Record a Sigh 6</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_7.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_7.jpg">
                     <span>You Cannot Record a Sigh 7</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_8.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_8.jpg">
                     <span>You Cannot Record a Sigh 8</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_9.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_9.jpg">
                     <span>You Cannot Record a Sigh 9</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_10.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_10.jpg">
                     <span>You Cannot Record a Sigh 10</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_11.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_11.jpg">
                     <span>You Cannot Record a Sigh 11</span>
-                    <img src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_12.jpg">
+                   <img class="lazyload" data-src="./img/10_You_Cannot_Record_a_Sigh/dialogue_book_12.jpg">
                     <span>You Cannot Record a Sigh 12</span>
                 </div>
 
                 <div id = "dt_11" title="11_Walk_Walk_Walk" class="details_content">
-                    <img src="./img/11_Walk_Walk_Walk/walk_walk_walk_1.jpg">
+                   <img class="lazyload" data-src="./img/11_Walk_Walk_Walk/walk_walk_walk_1.jpg">
                     <span>walk walk walk 1</span>
-                    <img src="./img/11_Walk_Walk_Walk/walk_walk_walk_2.jpg">
+                   <img class="lazyload" data-src="./img/11_Walk_Walk_Walk/walk_walk_walk_2.jpg">
                     <span>walk walk walk 2</span>
-                    <img src="./img/11_Walk_Walk_Walk/walk_walk_walk_3.jpg">
+                   <img class="lazyload" data-src="./img/11_Walk_Walk_Walk/walk_walk_walk_3.jpg">
                     <span>walk walk walk 3</span>
                 </div>
 
                 <div id = "dt_12" title="12_Matthew_Carter" class="details_content">
-                    <img src="./img/12_Matthew_Carter/matthew_carter.jpg">
+                   <img class="lazyload" data-src="./img/12_Matthew_Carter/matthew_carter.jpg">
                     <span>matthew carter</span>
-                    <img src="./img/12_Matthew_Carter/matthew_carter.gif">
+                   <img src="./img/12_Matthew_Carter/matthew_carter.gif">
                     <span>matthew carter gif</span>
                     <video controls = "true">
                         <source src="./img/12_Matthew_Carter/matthew_carter_video.mp4" type="video/mp4">
@@ -605,9 +603,9 @@
                 </div>
 
                 <div id = "dt_13" title="13_The_View" class="details_content">
-                    <img src="./img/13_The_View/typography_online_1.jpg">
+                   <img class="lazyload" data-src="./img/13_The_View/typography_online_1.jpg">
                     <span>typography online 1</span>
-                    <img src="./img/13_The_View/typography_online_2.jpg">
+                   <img class="lazyload" data-src="./img/13_The_View/typography_online_2.jpg">
                     <span>typography online 2</span>
                     <video controls = "true">
                         <source src="./img/13_The_View/typography_online_3.mp4" type="video/mp4">
@@ -622,66 +620,66 @@
                 </div>
 
                 <div id = "dt_14" title="14_A_Thing" class="details_content">
-                    <img src="./img/14_A_Thing/a_thing_1.jpg">
+                   <img class="lazyload" data-src="./img/14_A_Thing/a_thing_1.jpg">
                     <span>a thing 1</span>
-                    <img src="./img/14_A_Thing/a_thing_2.jpg">
+                   <img class="lazyload" data-src="./img/14_A_Thing/a_thing_2.jpg">
                     <span>a thing 2</span>
-                    <img src="./img/14_A_Thing/a_thing_3.jpg">
+                   <img class="lazyload" data-src="./img/14_A_Thing/a_thing_3.jpg">
                     <span>a thing 3</span>
                 </div>
 
                 <div id = "dt_15" title="15_Alone_Biography" class="details_content">
-                    <img src="./img/15_Alone_Biography/alone_biography_1.jpg">
+                   <img class="lazyload" data-src="./img/15_Alone_Biography/alone_biography_1.jpg">
                     <span>alone biography 1</span>
-                    <img src="./img/15_Alone_Biography/alone_biography_2.jpg">
+                   <img class="lazyload" data-src="./img/15_Alone_Biography/alone_biography_2.jpg">
                     <span>alone biography 2</span>
                 </div>
 
                 <div id = "dt_16" title="16_Lining_Cushing" class="details_content">
-                    <img src="./img/16_Lining_Cushing/Lining_Cushing_1.jpg">
+                   <img class="lazyload" data-src="./img/16_Lining_Cushing/Lining_Cushing_1.jpg">
                     <span>Lining Cushing 1</span>
-                    <img src="./img/16_Lining_Cushing/Lining_Cushing_2.jpg">
+                   <img class="lazyload" data-src="./img/16_Lining_Cushing/Lining_Cushing_2.jpg">
                     <span>Lining Cushing 2</span>
-                    <img src="./img/16_Lining_Cushing/Lining_Cushing_3.jpg">
+                   <img class="lazyload" data-src="./img/16_Lining_Cushing/Lining_Cushing_3.jpg">
                     <span>Lining Cushing 3</span>
-                    <img src="./img/16_Lining_Cushing/Lining_Cushing_4.jpg">
+                   <img class="lazyload" data-src="./img/16_Lining_Cushing/Lining_Cushing_4.jpg">
                     <span>Lining Cushing 4</span>
-                    <img src="./img/16_Lining_Cushing/Lining_Cushing_5.jpg">
+                   <img class="lazyload" data-src="./img/16_Lining_Cushing/Lining_Cushing_5.jpg">
                     <span>Lining Cushing 5</span>
                 </div>
 
                 <div id = "dt_17" title="17_Hutongism" class="details_content">
-                    <img src="./img/17_Hutongism/hutongism_1.jpg">
+                   <img class="lazyload" data-src="./img/17_Hutongism/hutongism_1.jpg">
                     <span>hutongism 1</span>
-                    <img src="./img/17_Hutongism/hutongism_2.jpg">
+                   <img class="lazyload" data-src="./img/17_Hutongism/hutongism_2.jpg">
                     <span>hutongism 2</span>
-                    <img src="./img/17_Hutongism/hutongism_3.jpg">
+                   <img class="lazyload" data-src="./img/17_Hutongism/hutongism_3.jpg">
                     <span>hutongism 3</span>
-                    <img src="./img/17_Hutongism/hutongism_4.jpg">
+                   <img class="lazyload" data-src="./img/17_Hutongism/hutongism_4.jpg">
                     <span>hutongism 4</span>
-                    <img src="./img/17_Hutongism/hutongism_5.jpg">
+                   <img class="lazyload" data-src="./img/17_Hutongism/hutongism_5.jpg">
                     <span>hutongism 5</span>
                 </div>
 
                 <div id = "dt_18" title="18_Delicious_Design" class="details_content">
-                    <img src="./img/18_Delicious_Design/delicious_design_1.jpg">
+                   <img class="lazyload" data-src="./img/18_Delicious_Design/delicious_design_1.jpg">
                     <span>delicious design 1</span>
-                    <img src="./img/18_Delicious_Design/delicious_design_2.jpg">
+                   <img class="lazyload" data-src="./img/18_Delicious_Design/delicious_design_2.jpg">
                     <span>delicious design 2</span>
-                    <img src="./img/18_Delicious_Design/delicious_design_3.jpg">
+                   <img class="lazyload" data-src="./img/18_Delicious_Design/delicious_design_3.jpg">
                     <span>delicious design 3</span>
-                    <img src="./img/18_Delicious_Design/delicious_design_4.jpg">
+                   <img class="lazyload" data-src="./img/18_Delicious_Design/delicious_design_4.jpg">
                     <span>delicious design 4</span>
-                    <img src="./img/18_Delicious_Design/delicious_design_5.jpg">
+                   <img class="lazyload" data-src="./img/18_Delicious_Design/delicious_design_5.jpg">
                     <span>delicious design 5</span>
                 </div>
 
                 <div id = "dt_19" title="19_Twoo_Cuup_Coffee" class="details_content">
-                    <img src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_1.jpg">
+                   <img class="lazyload" data-src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_1.jpg">
                     <span>twoo cuup 1</span>
-                    <img src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_2.jpg">
+                   <img class="lazyload" data-src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_2.jpg">
                     <span>twoo cuup 2</span>
-                    <img src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_3.jpg">
+                   <img class="lazyload" data-src="./img/19_Twoo_Cuup_Coffee/twoo_cuup_3.jpg">
                     <span>twoo cuup 3</span>
                 </div>
 

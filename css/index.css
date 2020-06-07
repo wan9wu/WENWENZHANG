@@ -4,7 +4,6 @@
          url('../fonts/goodsans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -13,7 +12,14 @@
          url('../fonts/gtsectra-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Lausanne-Regular';
+    src: url('../fonts/Lausanne-Regular.woff2') format('woff2'),
+         url('../fonts/Lausanne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -25,7 +31,12 @@ body {
     
      
 }
-body {font-size:100%;}
+body {font-size: 1.2vw;}
+a{
+    text-decoration:none;
+    color:black;
+}
+
 h1 {
     font-size:2.8em;
     margin: 0;
@@ -36,12 +47,14 @@ h2 {
     font-weight: 100;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
+    letter-spacing:0.3pt;
 }
 
 p {
     font-size:0.875em;
     margin-block-start: 0.2em;
     margin-block-end: 1em;
+    letter-spacing:0.2pt;
 }
 
 .no-bar::-webkit-scrollbar {
@@ -50,13 +63,12 @@ p {
 
 
 #header {
-    height: 3.6em;
-    top: -0.5em;
+    height: 7vh;
 
     position:relative;
     width: 100%;
     
-    border-bottom: 2px;
+    border-bottom: 1px;
     border-color: black;
     border-bottom-style: solid;
     
@@ -69,6 +81,9 @@ p {
     position:relative;
     float:left;
     margin-left: 10px;
+    top: -8;
+
+    cursor:pointer;
 }
 #info_button {
     font-family: 'good_sansregular';
@@ -76,6 +91,7 @@ p {
     position:relative;
     float: left;
     right: 10px;
+    top: -8;
 
     list-style-type: decimal;
 
@@ -86,6 +102,7 @@ p {
     position:relative;
     height: 100%;
     float: right;
+    top: -8;
 
     margin-right: 10px;
 
@@ -95,21 +112,27 @@ p {
 .detail_box {
     display: none;
     position: absolute;
-    top: 3.7em;
+    top: 7.2vh;
     z-index: 99;
     width: 100%;
 
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
 
     background-color: white;
 
-    border-bottom: 2px;
+    border-bottom: 1px;
     border-color: black;
     border-bottom-style: solid;
 
-    padding: 1em 1em 3em 1em;
+    padding: 2em 1em 2em 1em;
     box-sizing: border-box;
 }
+#info_button_detail_inner{
+    width: 56%;
+    float: right;    
+}
+
+
 .circle {
     display: none;
     width: 1.5em;
@@ -126,8 +149,7 @@ p {
 #main{
     position: relative;
     width: 100%;
-    height: 92%;
-    top: -0.5em;
+    height: 93vh;
 }
 #catalogue{
     position: relative;
@@ -149,7 +171,7 @@ p {
 .catalogur_item{
     padding-left: 1em;
 
-    border-bottom: 2px;
+    border-bottom: 1px;
     border-color: black;
     border-bottom-style: solid;
     width: 100%;
@@ -158,7 +180,7 @@ p {
 
 .ci_header{
     cursor:pointer;
-    font-family: 'good_sansregular';
+    font-family: 'Lausanne-Regular';
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -176,12 +198,13 @@ p {
     width: 30%;
 }
 .ci_body{
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
     display: none;
 }
 .ci_description{
-    width: 65%;
+    width: 50%;
     float: left;
+    margin-bottom: 20px;
 }
 .ci_other{
     width: 30%;
@@ -197,7 +220,7 @@ p {
 }
 
 .details_content{
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
     /* display: none;  */
     position: relative;
     width: 100%;
