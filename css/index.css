@@ -14,6 +14,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Lausanne-Regular';
+    src: url('../fonts/Lausanne-Regular.woff2') format('woff2'),
+         url('../fonts/Lausanne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0px;
 	overflow: hidden;
@@ -39,12 +47,14 @@ h2 {
     font-weight: 100;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
+    letter-spacing:0.3pt;
 }
 
 p {
     font-size:0.875em;
     margin-block-start: 0.2em;
     margin-block-end: 1em;
+    letter-spacing:0.2pt;
 }
 
 .no-bar::-webkit-scrollbar {
@@ -106,7 +116,7 @@ p {
     z-index: 99;
     width: 100%;
 
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
 
     background-color: white;
 
@@ -170,7 +180,7 @@ p {
 
 .ci_header{
     cursor:pointer;
-    font-family: 'good_sansregular';
+    font-family: 'Lausanne-Regular';
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -188,7 +198,7 @@ p {
     width: 30%;
 }
 .ci_body{
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
     display: none;
 }
 .ci_description{
@@ -210,7 +220,7 @@ p {
 }
 
 .details_content{
-    font-family: 'gt_sectrabook';
+    font-family: 'Lausanne-Regular';
     /* display: none;  */
     position: relative;
     width: 100%;
