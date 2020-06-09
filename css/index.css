@@ -109,6 +109,10 @@ p {
     cursor:pointer;
 }
 
+#contact_button_detail{
+    text-align: right;
+}
+
 .detail_box {
     display: none;
     position: absolute;

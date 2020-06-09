@@ -31,6 +31,15 @@ $(document).ready(function(){
         
     });
 
+    $("div.details_content").click(function(){
+        var CiContentId = "div[data-content-id=\'"+$(this).attr("id")+"\']";
+        
+        $("div.ci_body").each(function(){$(this).hide(500);});
+        $(CiContentId).next().show(1000);
+        var Cit = $(CiContentId).offset().top;//  获取需要跳转到标签的top值
+        $("#catalogue").animate({ scrollTop: $('#catalogue').scrollTop()+Cit-40}, 1000); // 动态跳转到指定位置（数值越大滚动速度越慢）
+    });
+
     $("#p_title").click(function(){
         $("div.ci_body").each(function(){$(this).hide(500);});
         $("div.ci_body").first().show(1000);
