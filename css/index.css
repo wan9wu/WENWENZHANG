@@ -43,9 +43,9 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    font-size:1.3em;
+    font-size:1.05em;
     font-weight: 100;
-    margin-top: 0.6em;
+    margin-top: 0.7em;
     margin-bottom: 0.6em;
     letter-spacing:0.3pt;
 }
@@ -55,6 +55,7 @@ p {
     margin-block-start: 0.2em;
     margin-block-end: 1em;
     letter-spacing:0.2pt;
+    line-height: 1.25em;
 }
 
 .no-bar::-webkit-scrollbar {
@@ -63,14 +64,19 @@ p {
 
 
 #header {
-    height: 7vh;
-
-    position:relative;
+    height: 3em;
+    position: absolute;
     width: 100%;
     
     border-bottom: 1px;
     border-color: black;
     border-bottom-style: solid;
+
+
+    background-color: white;
+    display: block;
+    z-index: 99;
+
     
 }
 
@@ -116,7 +122,7 @@ p {
 .detail_box {
     display: none;
     position: absolute;
-    top: 7.2vh;
+    top: 3.05em;
     z-index: 99;
     width: 100%;
 
@@ -133,7 +139,7 @@ p {
 }
 #info_button_detail_inner{
     width: 56%;
-    float: right;    
+    float: left;    
 }
 
 
@@ -153,8 +159,13 @@ p {
 #main{
     position: relative;
     width: 100%;
-    height: 93vh;
+    height: 100%;
 }
+#TopFixBox{
+    width: 100%;
+    height: 3em;
+}
+
 #catalogue{
     position: relative;
     width: 43%;
@@ -206,9 +217,10 @@ p {
     display: none;
 }
 .ci_description{
-    width: 50%;
+    width: 55%;
     float: left;
     margin-bottom: 20px;
+    font-size: 0.85em;
 }
 .ci_other{
     width: 30%;
@@ -239,5 +251,5 @@ p {
 .details_content span{
     float: right;
     margin-right: 5px;
-
+    font-size: 0.85em;
 }
