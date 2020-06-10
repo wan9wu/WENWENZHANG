@@ -51,7 +51,7 @@ h2 {
 }
 
 p {
-    font-size:0.875em;
+    font-size:0.85rem;
     margin-block-start: 0.2em;
     margin-block-end: 1em;
     letter-spacing:0.2pt;
@@ -138,7 +138,7 @@ p {
     box-sizing: border-box;
 }
 #info_button_detail_inner{
-    width: 56%;
+    width: 40%;
     float: left;    
 }
 
@@ -220,7 +220,7 @@ p {
     width: 55%;
     float: left;
     margin-bottom: 20px;
-    font-size: 0.85em;
+    font-size: 0.85rem;
 }
 .ci_other{
     width: 30%;
@@ -251,5 +251,5 @@ p {
 .details_content span{
     float: right;
     margin-right: 5px;
-    font-size: 0.85em;
+    font-size: 0.8rem;
 }
