@@ -22,16 +22,65 @@
     font-style: normal;
 }
 
+/* RESPONSIVE */
+/* iMac, Imac Pro */
+@media screen and (min-width: 2049px) and  (max-width: 2560px){
+    p,h2,.details_content span {
+        font-size: 15pt;
+    }
+ }
+ @media screen and (min-width: 1450px) and (max-width: 2048px) {
+    p,h2,.details_content span {
+        font-size: 12pt;
+     }
+}
+
+/* Macbook Retina */
+@media screen and (max-width: 1430px) {
+    p,h2,.details_content span {
+        font-size:10pt;
+    }
+}
+
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1225px) {}
+@media screen and (max-width: 1170px) {}
+@media screen and (max-width: 1170px) {
+    p,h2,.details_content span {
+        font-size: 9pt;
+    }
+}
+/* MOBILE */
+@media only screen and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 2) {
+    p,h2,.details_content span {
+        font-size: 18pt;
+    }
+}
+/* MOBILE */
+@media screen and (max-width: 930px) {
+    p,h2,.details_content span {
+        font-size: 10pt;
+    }
+}
+@media screen and (max-width: 730px) {}
+@media screen and (max-width: 500px) {
+    p,h2,.details_content span {
+        font-size: 9pt;
+    }
+}
+@media (max-width: 433px) {}
+
+html{
+    font-size: 1.2vw;
+}
+
 body {
     margin: 0px;
 	overflow: hidden;
     display: block;
     height: 100%;
     width: 100%;
-    
-     
 }
-body {font-size: 1.2vw;}
 a{
     text-decoration:none;
     color:black;
@@ -43,7 +92,7 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    font-size:1.05em;
+    /* font-size:1.05rem; */
     font-weight: 100;
     margin-top: 0.7em;
     margin-bottom: 0.6em;
@@ -51,7 +100,7 @@ h2 {
 }
 
 p {
-    font-size:0.85rem;
+    /* font-size:1.05rem; */
     margin-block-start: 0.2em;
     margin-block-end: 1em;
     letter-spacing:0.2pt;
@@ -251,5 +300,5 @@ p {
 .details_content span{
     float: right;
     margin-right: 5px;
-    font-size: 0.8rem;
+    /* font-size: 1.05rem; */
 }
